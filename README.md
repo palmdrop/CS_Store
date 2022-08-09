@@ -1,4 +1,5 @@
 ## CS_Store
+*Forked from https://github.com/tobyshooters/CS_Store*
 
 An infinite canvas for your filesystem. 
 
@@ -15,8 +16,10 @@ An infinite canvas for your filesystem.
 
 ### Installation
 1. Make sure you have the packages in `requirements.txt` installed
-2. Add `display` to your path or move it to a bin in your path.
+2. Add `display` to your path or move it to a bin in your path, or run `install.sh`.
 3. Run `display`!
+
+NOTE: At the moment, the `display` will assume this repository is located at `~/usr/repos/CS_Store`. Edit `display` to change this.
 
 ### To Do:
 1. Watch for changes to the `.CS_Store` for live updates from text editor

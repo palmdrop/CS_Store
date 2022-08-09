@@ -1,15 +1,17 @@
 #!/bin/sh
 
-python3 ~/dev/CS_Store/server.py "$PWD" &
+# python3 ~/dev/CS_Store/server.py "$PWD" &
+python3 ~/src/repos/CS_Store/server.py "$PWD" &
 PID=$!
 trap "kill $PID" EXIT
 echo 'CTRL + C to kill'
 sleep 0.1
 
-if [[ "$OSTYPE" == "linux-gnu"* ]]; then
-    chromium http://localhost:1234/static/index.html
-else
-    open http://localhost:1234/static/index.html
-fi
+# if [[ "$OSTYPE" == "linux-gnu"* ]]; then
+#     firefox http://localhost:1234/static/index.html
+# else
+#     open http://localhost:1234/static/index.html
+# fi
+xdg-open http://localhost:1234/static/index.html
 
 while :; do sleep 1; done
